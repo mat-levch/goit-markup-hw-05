@@ -18,9 +18,18 @@
     <nav class="main-nav">
       <a href="./index.html" class="logo"> <span class="color-logo">Web</span>Studio</a>
       <ul class="site-nav list">
-        <li class="item"><a href="" class="link current" >Студия</a></li>
-        <li class="item"><a href="./portfolio.html" class="link" >Портфолио</a></li>
-        <li class="item"><a href="" class="link" >Контакты</a></li>
+        <li class="item">
+          <a href="" class="link current">Студия</a>
+        </li>
+
+        <li class="item">
+          <a href="./portfolio.html" class="link">Портфолио</a>
+        </li>
+
+        <li class="item">
+          <a href="" class="link">Контакты</a>
+        </li>
+        
       </ul>
 
       <ul class="site-nav-contact list">
@@ -49,9 +58,24 @@
     <!-- Герой -->
     <section class="hero">
       <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-      <button type= “ ” class="button">Заказать услугу</button> 
+      <button data-modal-open type="button" class="button-hero">Заказать услугу</button> 
     </section> 
-      
+
+
+      <!--  Модальное окно -->
+<div data-modal class="backdrop is-hidden">
+  <div class="modal">
+    <button data-modal-close type="button" class="close-button" >
+    <svg class="close-button-svg" width="11" height="11">
+      <use href="./images/symbol-defs2.svg#close-modal-1"></use>
+    </svg>
+    </button>
+  </div>
+
+</div>
+
+
+
     <!-- Приемущества -->
     
     <section class="features-section">
@@ -442,6 +466,10 @@
   </div>
   
 </footer>
-  
+
+  <script src="./js/modal.js"></script>
+
 </body>
+
+
 
